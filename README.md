@@ -84,6 +84,7 @@ The restore script normally verifies that the connected site matches the URL sto
 - If more than one theme uses the same primary color, theme detection may be ambiguous.
 - Themes with an unknown source or without a detected name are exported for reference but are not automatically restored.
 - The Microsoft 365 suite bar at the top of SharePoint is controlled by organizational branding and is outside the scope of these scripts.
+- If the current theme cannot be identified as a Microsoft or tenant custom theme, including when no theme has been explicitly applied, its source is exported as Unknown and cannot be restored.
 - Always run the restore with `-WhatIf` first and test in a non-production site before wider use.
 
 ## Notes
